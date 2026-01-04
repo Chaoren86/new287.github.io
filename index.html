@@ -1,0 +1,3500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 微信和移动端优化 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- 安卓微信浮窗支持 -->
+    <meta name="applicable-device" content="mobile">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="theme-color" content="#667eea">
+    <!-- 防止微信识别为文件下载 - 多重声明 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 微信特定优化，防止被识别为文件 -->
+    <meta name="referrer" content="never">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- 明确告诉微信这是网页，不是文件 - 多重声明 -->
+    <meta name="content-type" content="text/html">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <meta name="media-type" content="text/html">
+    <meta name="document-type" content="html">
+    <meta name="mime-type" content="text/html">
+    <meta name="file-type" content="html">
+    <!-- 微信浏览器特定标识 -->
+    <meta name="x5-cache" content="false">
+    <meta name="x5-page-mode" content="app">
+    <meta name="x5-orientation" content="portrait">
+    <!-- 额外声明，确保微信识别为网页 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-itunes-app" content="app-id=">
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- 微信分享优化 -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <!-- 禁止所有搜索引擎和爬虫抓取 -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="slurp" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="duckduckbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="baiduspider" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="yisouSpider" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="Sogou" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="360Spider" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="Bytespider" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <!-- 禁止QQ和微信爬虫 -->
+    <meta name="QQBot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="TencentTraveler" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="WeChat" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="MicroMessenger" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <!-- 禁止其他常见爬虫 -->
+    <meta name="spider" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="crawler" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <meta name="bot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+            background: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 100%;
+            background: white;
+            border-radius: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: 100dvh; /* 动态视口高度，考虑移动端浏览器工具栏 */
+            max-height: 100vh;
+            max-height: 100dvh;
+            position: relative;
+            overflow: hidden;
+            /* 防止键盘弹起时容器滚动 */
+            overscroll-behavior: none;
+            touch-action: pan-y;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .header h1 {
+            font-size: clamp(18px, 4vw, 24px);
+            margin-bottom: 5px;
+            word-break: break-word;
+        }
+        
+        .header p {
+            font-size: clamp(12px, 2.5vw, 14px);
+            opacity: 0.9;
+            word-break: break-all;
+        }
+        
+        .notice {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 15px;
+            text-align: center;
+            font-size: clamp(12px, 2.5vw, 14px);
+            flex-shrink: 0;
+        }
+        
+        .iframe-wrapper {
+            position: relative;
+            flex: 1;
+            min-height: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            /* 确保点击位置准确 */
+            transform: none;
+            will-change: auto;
+        }
+        
+        /* 重选线路按钮 */
+        .route-change-btn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 10001;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: move;
+            cursor: grab;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            /* 确保按钮可以正常点击，不影响iframe */
+            pointer-events: auto;
+            touch-action: none;
+            user-select: none;
+            -webkit-user-select: none;
+            overflow: hidden;
+        }
+        
+        /* 折叠状态 - 只显示"选"字 */
+        .route-change-btn.collapsed {
+            padding: 8px 12px;
+            width: auto;
+            min-width: 40px;
+            border-radius: 20px 0 0 20px;
+            /* 默认靠右隐藏，只露出"选"字 */
+            right: 0 !important;
+            left: auto !important;
+            transform: translateX(calc(100% - 40px));
+        }
+        
+        /* 展开状态 - 竖的长方形 */
+        .route-change-btn.expanded {
+            transform: translateX(0);
+            border-radius: 20px;
+            padding: 18px 10px;
+            flex-direction: column;
+            width: auto;
+            min-width: 50px;
+        }
+        
+        .route-change-btn:active {
+            cursor: grabbing;
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+        }
+        
+        .route-change-btn:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #6a3d8f 100%);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.5);
+        }
+        
+        .route-change-btn.dragging {
+            opacity: 0.9;
+            cursor: grabbing;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.7);
+            /* 拖动时禁用transition，提升性能 */
+            transition: none !important;
+            will-change: transform, left, top;
+        }
+        
+        /* "选"字图标 */
+        .route-change-btn .select-icon {
+            font-size: 16px;
+            font-weight: 700;
+            white-space: nowrap;
+            display: none;
+            min-width: 20px;
+            text-align: center;
+            line-height: 1;
+        }
+        
+        /* 完整内容（图标+文字） */
+        .route-change-btn .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+        
+        /* 展开状态下，内容竖向排列 */
+        .route-change-btn.expanded .btn-content {
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* 折叠状态下隐藏完整内容，显示"选"字 */
+        .route-change-btn.collapsed .btn-content {
+            display: none;
+        }
+        
+        .route-change-btn.collapsed .select-icon {
+            display: inline-block;
+        }
+        
+        /* 展开状态下显示完整内容，隐藏"选"字 */
+        .route-change-btn.expanded .btn-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .route-change-btn.expanded .select-icon {
+            display: none;
+        }
+        
+        .route-change-btn svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+        
+        /* 展开状态下图标稍大一些 */
+        .route-change-btn.expanded svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .route-change-btn span {
+            white-space: nowrap;
+            font-size: 12px;
+        }
+        
+        /* 展开状态下文字稍大一些 */
+        .route-change-btn.expanded span {
+            font-size: 13px;
+        }
+        
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            min-height: 0;
+            background: #f5f5f5;
+            overflow: hidden;
+            /* 确保点击位置准确 - Chrome模拟器优化 */
+            touch-action: pan-x pan-y;
+            /* 确保容器定位准确，不影响点击 */
+            transform: none;
+            will-change: auto;
+            /* 确保容器尺寸准确 */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* 防止内容溢出导致横向滚动 */
+            max-width: 100%;
+            overflow-x: hidden;
+            /* Chrome模拟器优化 - 确保坐标准确 */
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            border: none;
+            display: block;
+            background: white;
+            overflow: auto;
+            /* 确保 iframe 内容可以完整显示 */
+            -webkit-overflow-scrolling: touch;
+            /* 微信浏览器优化 - 使用absolute定位确保点击位置准确 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* 确保内容可以滚动 */
+            overscroll-behavior: contain;
+            /* 确保点击位置准确 */
+            pointer-events: auto;
+            touch-action: auto;
+            /* 移除可能影响点击的变换和缩放 */
+            transform: none;
+            will-change: auto;
+            /* 确保iframe尺寸准确 */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* 确保没有缩放 */
+            zoom: 1;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .loading-spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .error-message {
+            color: #d32f2f;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .error-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .error-link:hover {
+            background: #5568d3;
+        }
+        
+        .mixed-content-warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .mixed-content-warning h3 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .mixed-content-warning p {
+            color: #856404;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .mixed-content-warning .solution {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-align: left;
+        }
+        
+        .mixed-content-warning .solution strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .mixed-content-warning .solution ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            color: #666;
+        }
+        
+        .mixed-content-warning .solution li {
+            margin: 5px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: clamp(11px, 2vw, 13px);
+            flex-shrink: 0;
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            html, body {
+                height: 100vh;
+                height: 100dvh;
+            }
+            
+            body {
+                padding: 0;
+            }
+            
+            .container {
+                border-radius: 0;
+                height: 100vh;
+                height: 100dvh;
+                max-height: 100vh;
+                max-height: 100dvh;
+            }
+            
+            .iframe-wrapper {
+                height: 100%;
+            }
+            
+            .iframe-container {
+                height: 100%;
+            }
+            
+            iframe {
+                height: 100%;
+                min-height: 100%;
+            }
+            
+            .loading {
+                padding: 15px 20px;
+                width: 90%;
+                max-width: 300px;
+            }
+            
+            .mixed-content-warning {
+                margin: 15px;
+                padding: 15px;
+            }
+            
+            .mixed-content-warning h3 {
+                font-size: 16px;
+            }
+            
+            .mixed-content-warning p {
+                font-size: 13px;
+            }
+            
+            .mixed-content-warning .solution {
+                padding: 12px;
+                font-size: 12px;
+            }
+        }
+        
+        /* Safari 特定优化 */
+        @supports (-webkit-touch-callout: none) {
+            html, body {
+                height: -webkit-fill-available;
+            }
+            
+            .container {
+                min-height: -webkit-fill-available;
+            }
+            
+            .iframe-wrapper {
+                min-height: -webkit-fill-available;
+            }
+        }
+        
+        /* 微信浏览器和iOS特定优化 */
+        @supports (-webkit-touch-callout: none) {
+            .iframe-container {
+                height: -webkit-fill-available;
+                min-height: -webkit-fill-available;
+            }
+            
+            iframe {
+                height: -webkit-fill-available;
+                min-height: -webkit-fill-available;
+            }
+        }
+        
+        /* Chrome 特定优化 */
+        @media screen and (min-width: 769px) {
+            .container {
+                height: 100vh;
+            }
+        }
+        
+        /* 超小屏幕优化 */
+        @media (max-width: 480px) {
+            .loading-text {
+                font-size: 14px;
+            }
+        }
+        
+        /* 横屏模式优化 */
+        @media (orientation: landscape) and (max-height: 500px) {
+            /* 横屏模式特定样式 */
+        }
+        
+        /* 隐藏加载动画 */
+        .loading.hidden {
+            display: none;
+        }
+        
+        /* 线路选择界面 */
+        .route-selector {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            padding: 20px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .route-selector.hidden {
+            display: none;
+        }
+        
+        .route-selector-content {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .route-selector-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .route-selector-header h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .route-selector-header p {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .route-section {
+            margin-bottom: 25px;
+        }
+        
+        .route-section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 12px;
+            padding-left: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .route-section:first-child .route-section-title {
+            color: #667eea;
+            font-size: 15px;
+        }
+        
+        .route-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .route-item {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .route-item:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+        
+        .route-item.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+        
+        .route-item.testing {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        
+        .route-item.error {
+            border-color: #d32f2f;
+            opacity: 0.6;
+        }
+        
+        .route-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .route-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .route-url {
+            font-size: 12px;
+            color: #999;
+            word-break: break-all;
+        }
+        
+        .route-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 100px;
+            justify-content: flex-end;
+        }
+        
+        .route-latency {
+            font-size: 14px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background: #f5f5f5;
+            color: #666;
+        }
+        
+        .route-latency.fast {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .route-latency.medium {
+            background: #fff3e0;
+            color: #e65100;
+        }
+        
+        .route-latency.slow {
+            background: #ffebee;
+            color: #c62828;
+        }
+        
+        .route-latency.testing {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .route-latency.error {
+            background: #ffebee;
+            color: #c62828;
+        }
+        
+        .route-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .route-badge.recommended {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .route-badge.fastest {
+            background: #2196f3;
+            color: white;
+        }
+        
+        .route-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .route-btn {
+            flex: 1;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .route-btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .route-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .route-btn-primary:active {
+            transform: translateY(0);
+        }
+        
+        .route-btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .route-btn-secondary {
+            background: #f5f5f5;
+            color: #666;
+        }
+        
+        .route-btn-secondary:hover {
+            background: #e0e0e0;
+        }
+        
+        .route-refresh-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            z-index: 10;
+            overflow: hidden;
+        }
+        
+        .route-refresh-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .route-refresh-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .route-refresh-btn:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #6a3d8f 100%);
+            transform: scale(1.15) rotate(180deg);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .route-refresh-btn:active {
+            transform: scale(1.05) rotate(180deg);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .route-refresh-btn svg {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s;
+        }
+        
+        .route-refresh-btn.refreshing {
+            animation: spin 1s linear infinite;
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+        
+        .route-refresh-btn.refreshing:hover {
+            transform: scale(1.15);
+            background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+        }
+        
+        .route-refresh-btn.refreshing svg {
+            animation: spin 1s linear infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .route-selector-content {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            
+            .route-selector-header h2 {
+                font-size: 20px;
+            }
+            
+            .route-item {
+                padding: 14px 16px;
+            }
+            
+            .route-name {
+                font-size: 15px;
+            }
+            
+            .route-url {
+                font-size: 11px;
+            }
+            
+            .route-section {
+                margin-bottom: 20px;
+            }
+            
+            .route-section-title {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+            
+            .route-latency {
+                font-size: 12px;
+                padding: 3px 10px;
+            }
+            
+            .route-actions {
+                flex-direction: column;
+            }
+            
+            .route-btn {
+                width: 100%;
+            }
+            
+            .route-refresh-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 22px;
+                top: 15px;
+                right: 15px;
+            }
+        }
+        
+        /* 安全检测页面 */
+        .security-check {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+        
+        .security-check.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            display: none !important;
+        }
+        
+        .security-check-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 50px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 500px;
+            width: 90%;
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .security-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+            }
+        }
+        
+        .security-check-content h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+            transition: all 0.5s ease-out;
+        }
+        
+        .security-check-content .subtitle {
+            font-size: 18px;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .security-check-content p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .security-check-content .hint {
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        /* 检测步骤 */
+        .check-steps {
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .check-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.5s ease-out;
+        }
+        
+        .check-step.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .check-step.completed {
+            opacity: 0.6;
+        }
+        
+        .step-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+        
+        .check-step.active .step-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            animation: stepPulse 1s infinite;
+        }
+        
+        .check-step.completed .step-icon {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .check-step.completed .step-icon::before {
+            content: '✓';
+        }
+        
+        @keyframes stepPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        .step-text {
+            font-size: 15px;
+            color: #666;
+            flex: 1;
+        }
+        
+        .check-step.active .step-text {
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .check-step.completed .step-text {
+            color: #999;
+        }
+        
+        /* 进度条 */
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #e0e0e0;
+            border-radius: 2px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.5s ease-out;
+            border-radius: 2px;
+        }
+        
+        /* 检测完成状态 */
+        .security-check-content.check-complete .check-steps {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-out;
+        }
+        
+        .security-check-content.check-complete .progress-bar {
+            opacity: 0;
+            height: 0;
+            margin: 0;
+            transition: all 0.5s ease-out;
+        }
+        
+        .security-check-content.check-complete .security-icon {
+            background: #4caf50;
+            animation: successPulse 0.6s ease-out;
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+        }
+        
+        @keyframes successPulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.15);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .security-check-content.check-complete h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #4caf50;
+        }
+        
+        .security-check-content.check-complete .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .security-check-btn {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            transition: all 0.5s ease-out;
+            pointer-events: none;
+        }
+        
+        .security-check-content.check-complete .security-check-btn {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            pointer-events: auto;
+            padding: 20px 60px;
+            font-size: 20px;
+        }
+        
+        .check-complete-message {
+            font-size: 15px;
+            color: #4caf50;
+            margin-bottom: 25px;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s ease-out 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .check-complete-message::before {
+            content: '✓';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: #4caf50;
+            color: white;
+            border-radius: 50%;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .security-check-content.check-complete .check-complete-message {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 简化后的布局 */
+        .security-check-content.check-complete {
+            padding: 50px 40px;
+        }
+        
+        .security-check-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            animation: buttonPulse 2s infinite;
+        }
+        
+        .security-check-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .security-check-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .security-check-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+        }
+        
+        .security-check-btn:active {
+            transform: translateY(-1px) scale(1.02);
+        }
+        
+        @keyframes buttonPulse {
+            0%, 100% {
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            }
+            50% {
+                box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+            }
+        }
+        
+        .security-check-btn span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .security-check-content .arrow-hint {
+            display: inline-block;
+            margin-left: 8px;
+            animation: arrowBounce 1.5s infinite;
+        }
+        
+        @keyframes arrowBounce {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .security-check-content {
+                padding: 30px 25px;
+            }
+            
+            .security-check-content.check-complete {
+                padding: 40px 25px;
+            }
+            
+            .security-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .security-check-content.check-complete .security-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 40px;
+            }
+            
+            .security-check-content h2 {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+            
+            .security-check-content.check-complete h2 {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            
+            .security-check-content p {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+            
+            .security-check-content.check-complete .subtitle {
+                font-size: 15px;
+                margin-bottom: 35px;
+            }
+            
+            .security-check-btn {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+            
+            .security-check-content.check-complete .security-check-btn {
+                padding: 16px 40px;
+                font-size: 18px;
+            }
+            
+            .check-complete-message {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 立即输出可见内容，确保微信识别为HTML页面而不是文件 -->
+    <!-- 微信需要立即看到HTML内容才能正确识别 -->
+    <div style="display:none;" id="wechat-html-marker">HTML</div>
+    <!-- JavaScript检测提示（通过JavaScript控制显示） -->
+    <div id="jsWarning" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#f5f5f5;display:none;align-items:center;justify-content:center;z-index:99999;">
+        <div style="text-align:center;padding:40px;background:white;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+            <h2 style="color:#d32f2f;margin-bottom:20px;">需要启用JavaScript</h2>
+            <p style="color:#666;line-height:1.6;">本页面需要JavaScript支持才能正常访问。</p>
+            <p style="color:#999;font-size:14px;margin-top:20px;">请启用浏览器的JavaScript功能后刷新页面。</p>
+        </div>
+    </div>
+    <!-- 安全检测页面 -->
+    <div id="securityCheck" class="security-check">
+        <div class="security-check-content" id="securityCheckContent">
+            <div class="security-icon">🔒</div>
+            <h2>安全检测中</h2>
+            <div class="subtitle" id="checkSubtitle">正在验证访问环境...</div>
+            
+            <div class="check-steps">
+                <div class="check-step" id="step1">
+                    <div class="step-icon">1</div>
+                    <div class="step-text">检测浏览器环境</div>
+                </div>
+                <div class="check-step" id="step2">
+                    <div class="step-icon">2</div>
+                    <div class="step-text">验证安全连接</div>
+                </div>
+                <div class="check-step" id="step3">
+                    <div class="step-icon">3</div>
+                    <div class="step-text">检查访问权限</div>
+                </div>
+                <div class="check-step" id="step4">
+                    <div class="step-icon">4</div>
+                    <div class="step-text">完成安全验证</div>
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 线路选择界面 -->
+    <div id="routeSelector" class="route-selector hidden">
+        <button class="route-refresh-btn" id="routeRefreshBtn" title="重新检测延迟">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="currentColor"/>
+            </svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C15.73 20 18.84 17.45 19.73 14H17.65C16.83 16.33 14.61 18 12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6C13.66 6 15.14 6.69 16.22 7.78L13 11H20V4L17.65 6.35Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <div class="route-selector-content">
+            <div class="route-selector-header">
+                <h2>请选择访问线路</h2>
+                <p>如遇打不开大概率是被拦截屏蔽，请尝试其他的线路。</p>
+            </div>
+            <div class="route-section" id="lastSelectedSection" style="display: none;">
+                <div class="route-section-title">上次选择</div>
+                <div class="route-list" id="lastSelectedRouteList">
+                    <!-- 上次选择的线路将显示在这里 -->
+                </div>
+            </div>
+            <div class="route-section" id="otherRoutesSection">
+                <div class="route-section-title">其他线路</div>
+                <div class="route-list" id="routeList">
+                    <!-- 其他线路列表将动态生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="mixedContentWarning" class="mixed-content-warning" style="display: none;">
+            <h3>⚠️ 混合内容安全限制</h3>
+            <p>由于浏览器安全策略，HTTPS 页面无法嵌入 HTTP 内容。</p>
+            <div class="solution">
+                <strong>解决方案：</strong>
+                <ul>
+                    <li>点击下方按钮在新窗口中打开网站（推荐）</li>
+                    <li>或者将页面部署到 HTTP 环境（非 GitHub Pages）</li>
+                    <li>或者为目标服务器配置 HTTPS 证书</li>
+                </ul>
+            </div>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="error-link" id="mixedContentLink" style="margin-top: 15px;">在新窗口中打开网站</a>
+        </div>
+        <div class="iframe-wrapper" id="iframeWrapper">
+            <!-- 重选线路按钮 -->
+            <button class="route-change-btn collapsed" id="routeChangeBtn" title="重选线路（可拖动）" style="display: none;">
+                <!-- 折叠状态显示的"选"字 -->
+                <span class="select-icon">选</span>
+                <!-- 展开状态显示的完整内容 -->
+                <div class="btn-content">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z" fill="currentColor"/>
+                    </svg>
+                    <span>重选线路</span>
+                </div>
+            </button>
+            <div class="iframe-container">
+                <div class="loading" id="loading">
+                    <div class="loading-spinner"></div>
+                    <div class="loading-text">正在加载网站...</div>
+                </div>
+                <iframe 
+                    id="mainFrame"
+                    title="第三方网站内容"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                    allowfullscreen
+                    sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-modals"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    loading="lazy"
+                    scrolling="yes"
+                    style="overflow: auto; -webkit-overflow-scrolling: touch;">
+                    <p>您的浏览器不支持iframe。请<a href="#" target="_blank" rel="noopener noreferrer" id="fallbackLink">点击这里</a>在新窗口中打开。</p>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+            
+            // 检测微信环境
+            const isWeChat = /micromessenger/i.test(navigator.userAgent);
+            const isQQ = /mqqbrowser|qzone|qqbrowser/i.test(navigator.userAgent);
+            
+            // 微信/QQ环境特殊处理：立即渲染页面内容，防止被识别为文件
+            if (isWeChat || isQQ) {
+                // 强制立即显示body内容
+                if (document.body) {
+                    document.body.style.visibility = 'visible';
+                    document.body.style.display = 'block';
+                    document.body.style.opacity = '1';
+                }
+                // 确保HTML元素可见
+                if (document.documentElement) {
+                    document.documentElement.style.visibility = 'visible';
+                    document.documentElement.style.display = 'block';
+                }
+                // 立即触发重绘和回流，确保微信识别为HTML
+                if (document.body) {
+                    // 强制触发重绘
+                    const forceRepaint = document.body.offsetHeight;
+                    // 确保有内容高度
+                    if (document.body.offsetHeight === 0) {
+                        document.body.style.minHeight = '1px';
+                        setTimeout(function() {
+                            if (document.body) {
+                                document.body.style.minHeight = '';
+                            }
+                        }, 0);
+                    }
+                }
+                // 确保安全检测页面立即可见
+                const securityCheck = document.getElementById('securityCheck');
+                if (securityCheck) {
+                    securityCheck.style.display = 'flex';
+                    securityCheck.style.visibility = 'visible';
+                    securityCheck.style.opacity = '1';
+                }
+                // 强制触发一次重绘
+                if (window.requestAnimationFrame) {
+                    requestAnimationFrame(function() {
+                        if (document.body) {
+                            document.body.style.display = document.body.style.display || 'block';
+                        }
+                    });
+                }
+            }
+            
+            // 立即隐藏JavaScript警告（如果JavaScript能运行，说明已启用）
+            (function() {
+                const jsWarning = document.getElementById('jsWarning');
+                if (jsWarning) {
+                    jsWarning.style.display = 'none';
+                }
+            })();
+            
+            // 反爬虫检测 - 检测User-Agent
+            function detectCrawler() {
+                const userAgent = navigator.userAgent || '';
+                const ua = userAgent.toLowerCase();
+                
+                // 允许的正常浏览器User-Agent关键词（这些不应该被阻止）
+                const allowedBrowsers = [
+                    'micromessenger',  // 微信内置浏览器
+                    'wechat',          // 微信浏览器
+                    'qqbrowser',       // QQ浏览器
+                    'mqqbrowser',      // 移动QQ浏览器
+                    'tencenttraveler'  // 腾讯浏览器
+                ];
+                
+                // 检查是否是正常的浏览器（包含允许的关键词）
+                let isAllowedBrowser = false;
+                for (let i = 0; i < allowedBrowsers.length; i++) {
+                    if (ua.indexOf(allowedBrowsers[i]) !== -1) {
+                        isAllowedBrowser = true;
+                        break;
+                    }
+                }
+                
+                // 如果是正常浏览器，直接允许访问
+                if (isAllowedBrowser) {
+                    return false;
+                }
+                
+                // 明确的爬虫关键词列表（只检测真正的爬虫）
+                const crawlerKeywords = [
+                    // 搜索引擎爬虫（明确的bot标识）
+                    'googlebot',
+                    'bingbot',
+                    'slurp',
+                    'duckduckbot',
+                    'baiduspider',
+                    'yisouspider',
+                    'sogou web spider',
+                    'sogou inst spider',
+                    '360spider',
+                    'bytespider',
+                    'yandexbot',
+                    'facebookexternalhit',
+                    'facebookbot',
+                    'twitterbot',
+                    'linkedinbot',
+                    'telegrambot',
+                    // 明确的爬虫标识（必须包含bot/spider/crawler等）
+                    'spider',
+                    'crawler',
+                    'bot',
+                    'scraper',
+                    'spiderbot',
+                    'crawlbot',
+                    // 自动化工具和爬虫框架
+                    'python-requests',
+                    'scrapy',
+                    'headless',
+                    'phantom',
+                    'selenium',
+                    'puppeteer',
+                    'playwright',
+                    'cheerio',
+                    // HTTP客户端（可能是爬虫）
+                    'wget',
+                    'curl',
+                    'java/',
+                    'go-http-client',
+                    'httpclient',
+                    'apache-httpclient',
+                    'okhttp',
+                    'node-fetch',
+                    'axios'
+                ];
+                
+                // 检测是否为明确的爬虫（必须包含明确的爬虫关键词）
+                for (let i = 0; i < crawlerKeywords.length; i++) {
+                    if (ua.indexOf(crawlerKeywords[i]) !== -1) {
+                        // 对于bot/spider/crawler这些通用词，需要更严格的判断
+                        if (crawlerKeywords[i] === 'bot' || crawlerKeywords[i] === 'spider' || crawlerKeywords[i] === 'crawler') {
+                            // 检查是否真的是爬虫（User-Agent中明确包含bot/spider/crawler，且不是正常浏览器）
+                            // 正常浏览器的User-Agent通常包含chrome/safari/firefox等
+                            const hasBrowserMarker = ua.indexOf('chrome') !== -1 || 
+                                                    ua.indexOf('safari') !== -1 || 
+                                                    ua.indexOf('firefox') !== -1 ||
+                                                    ua.indexOf('edge') !== -1 ||
+                                                    ua.indexOf('opera') !== -1;
+                            // 如果包含bot/spider/crawler但没有正常浏览器标识，判定为爬虫
+                            if (!hasBrowserMarker) {
+                                return true;
+                            }
+                        } else {
+                            // 其他明确的爬虫关键词（如googlebot、selenium等），直接判定为爬虫
+                            return true;
+                        }
+                    }
+                }
+                
+                // 检测自动化工具特征（webdriver是selenium等自动化工具的标志）
+                // 但允许正常的Chrome浏览器（即使打开开发者工具）
+                if (navigator.webdriver) {
+                    // 如果同时满足多个可疑条件，才判定为爬虫
+                    // 单独webdriver属性可能是开发者工具，不直接阻止
+                    const suspiciousCount = 0;
+                    // 检查是否真的是自动化工具（结合其他特征）
+                    if (!window.chrome || !navigator.plugins || navigator.plugins.length === 0) {
+                        return true;
+                    }
+                }
+                
+                // 检测屏幕尺寸异常（无头浏览器通常有固定尺寸）
+                // 但允许正常的浏览器（即使窗口很小）
+                if (window.screen && window.screen.width > 0 && window.screen.height > 0) {
+                    // 屏幕尺寸正常，继续检测
+                } else if (window.screen && (window.screen.width === 0 || window.screen.height === 0)) {
+                    // 屏幕尺寸为0，结合其他特征判断
+                    if (navigator.webdriver || ua.indexOf('headless') !== -1) {
+                        return true;
+                    }
+                }
+                
+                // 检测语言设置异常（真正的浏览器应该有语言设置）
+                if (!navigator.language && !navigator.languages) {
+                    // 结合其他特征判断
+                    if (navigator.webdriver || ua.indexOf('headless') !== -1) {
+                        return true;
+                    }
+                }
+                
+                // 检测时区异常（真正的浏览器应该有时区）
+                try {
+                    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                    if (!timezone) {
+                        // 结合其他特征判断
+                        if (navigator.webdriver || ua.indexOf('headless') !== -1) {
+                            return true;
+                        }
+                    }
+                } catch (e) {
+                    // 时区检测失败，不直接判定为爬虫
+                }
+                
+                return false;
+            }
+            
+            // 如果检测到爬虫，阻止访问
+            if (detectCrawler()) {
+                // 清空页面内容
+                document.body.innerHTML = '';
+                document.body.style.cssText = 'margin:0;padding:0;background:#f5f5f5;display:flex;align-items:center;justify-content:center;height:100vh;font-family:Arial,sans-serif;';
+                document.body.innerHTML = '<div style="text-align:center;padding:40px;background:white;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1);"><h2 style="color:#d32f2f;margin-bottom:20px;">访问被拒绝</h2><p style="color:#666;line-height:1.6;">抱歉，本页面不允许自动化工具访问。</p><p style="color:#999;font-size:14px;margin-top:20px;">请使用正常的浏览器访问。</p></div>';
+                // 阻止后续脚本执行
+                throw new Error('Crawler detected');
+            }
+            
+            // 获取DOM元素
+            const iframe = document.getElementById('mainFrame');
+            const loading = document.getElementById('loading');
+            const iframeWrapper = document.getElementById('iframeWrapper');
+            const mixedContentWarning = document.getElementById('mixedContentWarning');
+            const securityCheck = document.getElementById('securityCheck');
+            const routeSelector = document.getElementById('routeSelector');
+            const routeList = document.getElementById('routeList');
+            const routeRefreshBtn = document.getElementById('routeRefreshBtn');
+            const routeChangeBtn = document.getElementById('routeChangeBtn');
+            
+            // 变量初始化
+            let loadTimeout;
+            let hasLoaded = false;
+            let errorDetected = false;
+            let checkCount = 0;
+            const maxChecks = 20; // 最多检查20次（10秒）
+            
+            // ============================================
+            // 线路配置区域 - 在这里配置所有可用的线路
+            // ============================================
+            // 注意：所有URL都统一在这里配置，代码中不再硬编码URL
+            // 添加新线路：复制一个配置对象，修改id、name、url和description即可
+            const routeConfig = [
+                {
+                    id: 'route1',
+                    name: '线路一',
+                    url: 'https://8.217.47.97:168',  // 主线路URL
+                    description: '主线路'
+                },
+                {
+                    id: 'route2',
+                    name: '线路二',
+                    url: 'https://utau5r.cn',  // 备用线路一URL
+                    description: '备用线路一'
+                },
+                {
+                    id: 'route3',
+                    name: '线路三',
+                    url: 'https://2o12p4.cn',  // 备用线路二URL
+                    description: '备用线路二'
+                },
+                {
+                    id: 'route3',
+                    name: '线路四',
+                    url: 'https://bsy83p.cn',  // 备用线路二URL
+                    description: '备用线路三'
+                }
+                // 可以继续添加更多线路，例如：
+                // {
+                //     id: 'route4',
+                //     name: '线路四',
+                //     url: 'https://your-backup-url.com',
+                //     description: '备用线路三'
+                // }
+            ];
+            
+            // 当前选中的线路
+            let selectedRoute = null;
+            let routeLatencies = {}; // 存储各线路的延迟信息
+            
+            // 存储键名
+            const STORAGE_KEY_ROUTE = 'selectedRouteId';
+            const STORAGE_KEY_URL_PARAMS = 'iframeUrlParams';
+            
+            // 从localStorage恢复选择的线路
+            function restoreSelectedRoute() {
+                try {
+                    const savedRouteId = localStorage.getItem(STORAGE_KEY_ROUTE);
+                    if (savedRouteId) {
+                        const route = routeConfig.find(function(r) {
+                            return r.id === savedRouteId;
+                        });
+                        if (route) {
+                            selectedRoute = route;
+                            iframeBaseUrl = route.url;
+                            return true;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('无法读取localStorage:', e);
+                }
+                return false;
+            }
+            
+            // 保存选择的线路到localStorage
+            function saveSelectedRoute(route) {
+                try {
+                    if (route && route.id) {
+                        localStorage.setItem(STORAGE_KEY_ROUTE, route.id);
+                    }
+                } catch (e) {
+                    console.warn('无法保存到localStorage:', e);
+                }
+            }
+            
+            // 保存URL参数到localStorage
+            function saveUrlParams() {
+                try {
+                    const param = getQueryParam() || getCurrentHash();
+                    if (param) {
+                        localStorage.setItem(STORAGE_KEY_URL_PARAMS, param);
+                    } else {
+                        localStorage.removeItem(STORAGE_KEY_URL_PARAMS);
+                    }
+                } catch (e) {
+                    console.warn('无法保存URL参数到localStorage:', e);
+                }
+            }
+            
+            // 从localStorage恢复URL参数
+            function restoreUrlParams() {
+                try {
+                    const savedParams = localStorage.getItem(STORAGE_KEY_URL_PARAMS);
+                    if (savedParams) {
+                        // 如果当前URL没有参数，使用保存的参数
+                        const currentParam = getQueryParam() || getCurrentHash();
+                        if (!currentParam && savedParams) {
+                            // 如果是hash格式，直接设置hash
+                            if (savedParams.startsWith('#')) {
+                                window.location.hash = savedParams;
+                            }
+                        }
+                    }
+                } catch (e) {
+                    console.warn('无法读取URL参数:', e);
+                }
+            }
+            
+            // iframe基础URL（将根据选择的线路动态设置）
+            // 默认使用第一个线路的URL，但如果localStorage中有保存，则使用保存的
+            let iframeBaseUrl = routeConfig.length > 0 ? routeConfig[0].url : '';
+            
+            // 尝试恢复之前选择的线路
+            const hasSavedRoute = restoreSelectedRoute();
+            if (hasSavedRoute) {
+                // 恢复URL参数
+                restoreUrlParams();
+            }
+            
+            // 获取当前使用的URL（用于更新链接等）
+            function getCurrentUrl() {
+                return iframeBaseUrl || (routeConfig.length > 0 ? routeConfig[0].url : '');
+            }
+            
+            // 获取当前页面的hash参数
+            function getCurrentHash() {
+                const hash = window.location.hash;
+                return hash && hash.length > 1 ? hash : '';
+            }
+            
+            // 获取当前页面的查询参数（转换为hash格式）
+            function getQueryParam() {
+                const search = window.location.search;
+                if (search) {
+                    const params = new URLSearchParams(search);
+                    const agentCode = params.get('agent_code');
+                    if (agentCode) {
+                        // 转换为hash格式
+                        return '#/?agent_code=' + agentCode;
+                    }
+                }
+                return '';
+            }
+            
+            // 构建完整的iframe URL
+            function buildIframeUrl(baseUrl) {
+                const url = baseUrl || getCurrentUrl();
+                if (!url) return '';
+                
+                // 优先使用查询参数（已转换为hash格式）
+                const queryParam = getQueryParam();
+                if (queryParam) {
+                    return url + '/' + queryParam;
+                }
+                
+                // 如果没有查询参数，使用hash参数
+                const hash = getCurrentHash();
+                if (hash) {
+                    return url + '/' + hash;
+                }
+                
+                return url;
+            }
+            
+            // 更新所有链接的URL（当线路改变时调用）
+            function updateAllLinks() {
+                const currentUrl = getCurrentUrl();
+                const param = getQueryParam() || getCurrentHash();
+                const fullUrl = currentUrl + param;
+                
+                // 更新mixedContentLink
+                const mixedContentLink = document.getElementById('mixedContentLink');
+                if (mixedContentLink) {
+                    mixedContentLink.href = fullUrl;
+                }
+                
+                // 更新fallbackLink
+                const fallbackLink = document.getElementById('fallbackLink');
+                if (fallbackLink) {
+                    fallbackLink.href = fullUrl;
+                }
+                
+                // 更新所有错误链接
+                const errorLinks = document.querySelectorAll('.error-link');
+                errorLinks.forEach(function(link) {
+                    if (link.id !== 'mixedContentLink' && link.id !== 'fallbackLink') {
+                        link.href = fullUrl;
+                    }
+                });
+            }
+            
+            // 检测URL延迟
+            function testRouteLatency(route) {
+                return new Promise(function(resolve) {
+                    const startTime = performance.now();
+                    const testUrl = route.url + '/favicon.ico?' + Date.now();
+                    
+                    // 使用Image对象测试（跨域友好）
+                    const img = new Image();
+                    let resolved = false;
+                    
+                    const timeout = setTimeout(function() {
+                        if (!resolved) {
+                            resolved = true;
+                            resolve({
+                                route: route,
+                                latency: null,
+                                error: 'timeout',
+                                status: 'error'
+                            });
+                        }
+                    }, 5000); // 5秒超时
+                    
+                    img.onload = function() {
+                        if (!resolved) {
+                            resolved = true;
+                            clearTimeout(timeout);
+                            const latency = Math.round(performance.now() - startTime);
+                            resolve({
+                                route: route,
+                                latency: latency,
+                                error: null,
+                                status: 'success'
+                            });
+                        }
+                    };
+                    
+                    img.onerror = function() {
+                        if (!resolved) {
+                            resolved = true;
+                            clearTimeout(timeout);
+                            // 即使加载失败，也记录时间（可能服务器不支持favicon，但能响应）
+                            const latency = Math.round(performance.now() - startTime);
+                            resolve({
+                                route: route,
+                                latency: latency < 5000 ? latency : null,
+                                error: latency < 5000 ? null : 'timeout',
+                                status: latency < 5000 ? 'success' : 'error'
+                            });
+                        }
+                    };
+                    
+                    // 尝试使用fetch API（更准确，但可能受CORS限制）
+                    if (typeof fetch !== 'undefined') {
+                        fetch(testUrl, {
+                            method: 'HEAD',
+                            mode: 'no-cors',
+                            cache: 'no-cache'
+                        }).then(function() {
+                            if (!resolved) {
+                                resolved = true;
+                                clearTimeout(timeout);
+                                const latency = Math.round(performance.now() - startTime);
+                                resolve({
+                                    route: route,
+                                    latency: latency,
+                                    error: null,
+                                    status: 'success'
+                                });
+                            }
+                        }).catch(function() {
+                            // fetch失败，继续使用img方式
+                        });
+                    }
+                    
+                    img.src = testUrl;
+                });
+            }
+            
+            // 检测所有线路的延迟
+            async function testAllRoutes() {
+                const promises = routeConfig.map(function(route) {
+                    return testRouteLatency(route);
+                });
+                
+                const results = await Promise.all(promises);
+                
+                // 存储延迟结果
+                results.forEach(function(result) {
+                    routeLatencies[result.route.id] = result;
+                });
+                
+                // 找到最快的线路
+                const successfulResults = results.filter(function(r) {
+                    return r.status === 'success' && r.latency !== null;
+                });
+                
+                if (successfulResults.length > 0) {
+                    successfulResults.sort(function(a, b) {
+                        return a.latency - b.latency;
+                    });
+                    return successfulResults[0].route;
+                }
+                
+                // 如果没有成功的，返回第一个
+                return routeConfig[0];
+            }
+            
+            // 创建线路项元素
+            function createRouteItem(route, fastestRoute) {
+                const latency = routeLatencies[route.id];
+                const routeItem = document.createElement('div');
+                routeItem.className = 'route-item';
+                routeItem.dataset.routeId = route.id;
+                
+                if (selectedRoute && selectedRoute.id === route.id) {
+                    routeItem.classList.add('selected');
+                }
+                
+                if (latency && latency.status === 'testing') {
+                    routeItem.classList.add('testing');
+                }
+                
+                if (latency && latency.status === 'error') {
+                    routeItem.classList.add('error');
+                }
+                
+                let latencyHtml = '';
+                if (latency) {
+                    if (latency.status === 'testing') {
+                        latencyHtml = '<span class="route-latency testing">检测中...</span>';
+                    } else if (latency.status === 'error') {
+                        latencyHtml = '<span class="route-latency error">连接失败</span>';
+                    } else if (latency.latency !== null) {
+                        const latencyClass = latency.latency < 500 ? 'fast' : (latency.latency < 1500 ? 'medium' : 'slow');
+                        latencyHtml = '<span class="route-latency ' + latencyClass + '">' + latency.latency + 'ms</span>';
+                    } else {
+                        latencyHtml = '<span class="route-latency">未知</span>';
+                    }
+                } else {
+                    latencyHtml = '<span class="route-latency testing">等待检测...</span>';
+                }
+                
+                let badgeHtml = '';
+                if (fastestRoute && route.id === fastestRoute.id && latency && latency.status === 'success') {
+                    badgeHtml = '<span class="route-badge fastest">最快</span>';
+                }
+                
+                routeItem.innerHTML = '<div class="route-info">' +
+                    '<div class="route-name">' + route.name + badgeHtml + '</div>' +
+                    '</div>' +
+                    '<div class="route-status">' + latencyHtml + '</div>';
+                
+                routeItem.addEventListener('click', function() {
+                    if (latency && latency.status === 'testing') return;
+                    if (latency && latency.status === 'error') return; // 连接失败的线路不能选择
+                    
+                    // 直接选择并进入该线路
+                    selectedRoute = route;
+                    confirmRouteSelection();
+                });
+                
+                return routeItem;
+            }
+            
+            // 渲染线路列表
+            function renderRouteList() {
+                const routeList = document.getElementById('routeList');
+                const lastSelectedRouteList = document.getElementById('lastSelectedRouteList');
+                const lastSelectedSection = document.getElementById('lastSelectedSection');
+                const otherRoutesSection = document.getElementById('otherRoutesSection');
+                
+                if (!routeList || !lastSelectedRouteList) return;
+                
+                // 清空列表
+                routeList.innerHTML = '';
+                lastSelectedRouteList.innerHTML = '';
+                
+                // 获取上次选择的线路ID
+                let lastSelectedRouteId = null;
+                try {
+                    lastSelectedRouteId = localStorage.getItem(STORAGE_KEY_ROUTE);
+                } catch (e) {
+                    // 忽略错误
+                }
+                
+                // 找到上次选择的线路
+                const lastSelectedRoute = lastSelectedRouteId ? routeConfig.find(function(r) {
+                    return r.id === lastSelectedRouteId;
+                }) : null;
+                
+                // 分离线路：上次选择的和其他的
+                const otherRoutes = routeConfig.filter(function(route) {
+                    return !lastSelectedRoute || route.id !== lastSelectedRoute.id;
+                });
+                
+                // 按延迟排序其他线路（成功的在前，按延迟升序）
+                const sortedOtherRoutes = otherRoutes.slice().sort(function(a, b) {
+                    const latencyA = routeLatencies[a.id];
+                    const latencyB = routeLatencies[b.id];
+                    
+                    if (!latencyA || latencyA.status !== 'success') return 1;
+                    if (!latencyB || latencyB.status !== 'success') return -1;
+                    
+                    return (latencyA.latency || 9999) - (latencyB.latency || 9999);
+                });
+                
+                // 找到最快的线路（在所有线路中）
+                const allRoutes = lastSelectedRoute ? [lastSelectedRoute, ...otherRoutes] : otherRoutes;
+                const fastestRoute = allRoutes.find(function(route) {
+                    const latency = routeLatencies[route.id];
+                    return latency && latency.status === 'success' && latency.latency !== null;
+                });
+                
+                // 渲染上次选择的线路（如果有）
+                if (lastSelectedRoute) {
+                    lastSelectedSection.style.display = 'block';
+                    const routeItem = createRouteItem(lastSelectedRoute, fastestRoute);
+                    lastSelectedRouteList.appendChild(routeItem);
+                } else {
+                    lastSelectedSection.style.display = 'none';
+                }
+                
+                // 渲染其他线路
+                sortedOtherRoutes.forEach(function(route) {
+                    routeList.appendChild(createRouteItem(route, fastestRoute));
+                });
+            }
+            
+            // 显示线路选择界面
+            function showRouteSelector() {
+                if (!routeSelector) return;
+                
+                // 如果只有一个线路，直接使用，不显示选择界面
+                if (routeConfig.length === 1) {
+                    selectedRoute = routeConfig[0];
+                    iframeBaseUrl = selectedRoute.url;
+                    // 保存选择的线路
+                    saveSelectedRoute(selectedRoute);
+                    saveUrlParams();
+                    
+                    if (iframeWrapper) {
+                        iframeWrapper.style.display = '';
+                    }
+                    // 更新所有链接
+                    updateAllLinks();
+                    // 只有在选择线路后才设置iframe的src
+                    if (iframe) {
+                        updateIframeUrl();
+                    }
+                    setTimeout(updateIframeHeight, 100);
+                    return;
+                }
+                
+                routeSelector.classList.remove('hidden');
+                // 隐藏重新选择线路按钮（显示选择界面时）
+                if (routeChangeBtn) {
+                    routeChangeBtn.style.display = 'none';
+                }
+                selectedRoute = null;
+                routeLatencies = {};
+                
+                // 初始渲染
+                renderRouteList();
+                
+                // 开始检测延迟
+                routeConfig.forEach(function(route) {
+                    routeLatencies[route.id] = {
+                        route: route,
+                        latency: null,
+                        error: null,
+                        status: 'testing'
+                    };
+                });
+                renderRouteList();
+                
+                // 检测所有线路
+                testAllRoutes().then(function(fastestRoute) {
+                    // 自动选择最快的线路（但不自动进入，等待用户点击）
+                    if (fastestRoute && !selectedRoute) {
+                        selectedRoute = fastestRoute;
+                        const routeItem = document.querySelector('[data-route-id="' + fastestRoute.id + '"]');
+                        if (routeItem) {
+                            routeItem.classList.add('selected');
+                        }
+                    }
+                    renderRouteList();
+                });
+            }
+            
+            // 隐藏线路选择界面
+            function hideRouteSelector() {
+                if (routeSelector) {
+                    routeSelector.classList.add('hidden');
+                }
+            }
+            
+            // 确认选择线路
+            function confirmRouteSelection() {
+                if (!selectedRoute) return;
+                
+                iframeBaseUrl = selectedRoute.url;
+                
+                // 保存选择的线路到localStorage
+                saveSelectedRoute(selectedRoute);
+                
+                // 保存URL参数
+                saveUrlParams();
+                
+                hideRouteSelector();
+                
+                // 更新所有链接
+                updateAllLinks();
+                
+                // 显示iframe容器
+                if (iframeWrapper) {
+                    iframeWrapper.style.display = '';
+                }
+                
+                // 显示重新选择线路按钮
+                if (routeChangeBtn) {
+                    routeChangeBtn.style.display = 'flex';
+                }
+                
+                // 只有在用户选择线路后才设置iframe的src并开始加载
+                // 确保iframe之前没有src，避免提前加载
+                if (iframe) {
+                    // 如果iframe还没有src，或者src是空的，才设置新的URL
+                    if (!iframe.src || iframe.src === '' || iframe.src === 'about:blank') {
+                        updateIframeUrl();
+                    } else {
+                        // 如果已经有src，更新为新的URL（切换线路时）
+                        updateIframeUrl();
+                    }
+                }
+                
+                // 更新高度
+                setTimeout(updateIframeHeight, 100);
+                setTimeout(updateIframeHeight, 500);
+            }
+            
+            // 直接加载保存的线路（跳过选择界面）
+            function loadSavedRoute() {
+                if (!selectedRoute) return false;
+                
+                iframeBaseUrl = selectedRoute.url;
+                
+                // 更新所有链接
+                updateAllLinks();
+                
+                // 显示iframe容器
+                if (iframeWrapper) {
+                    iframeWrapper.style.display = '';
+                }
+                
+                // 显示重新选择线路按钮
+                if (routeChangeBtn) {
+                    routeChangeBtn.style.display = 'flex';
+                }
+                
+                // 设置iframe的src并开始加载
+                if (iframe) {
+                    updateIframeUrl();
+                }
+                
+                // 更新高度
+                setTimeout(updateIframeHeight, 100);
+                setTimeout(updateIframeHeight, 500);
+                
+                return true;
+            }
+            
+            // 更新iframe的src和所有相关链接
+            function updateIframeUrl() {
+                const newUrl = buildIframeUrl(getCurrentUrl());
+                if (iframe && newUrl) {
+                    if (iframe.src !== newUrl) {
+                        iframe.src = newUrl;
+                        hasLoaded = false; // 重置加载状态
+                        if (loading) {
+                            loading.classList.remove('hidden');
+                        }
+                    } else {
+                        // 即使URL相同，也确保参数存在
+                        const param = getQueryParam() || getCurrentHash();
+                        if (param && !iframe.src.includes(param)) {
+                            iframe.src = newUrl;
+                        }
+                    }
+                }
+                
+                // 更新所有链接的URL
+                updateAllLinks();
+            }
+            
+            // 检测混合内容问题
+            function checkMixedContent() {
+                return window.location.protocol === 'https:' && iframe && iframe.src.startsWith('http:');
+            }
+            
+            // 显示混合内容警告
+            function showMixedContentWarning() {
+                if (mixedContentWarning) {
+                    mixedContentWarning.style.display = 'block';
+                    // 更新警告中的链接URL
+                    updateAllLinks();
+                }
+                if (iframeWrapper) {
+                    iframeWrapper.style.display = 'none';
+                }
+                if (loading) {
+                    loading.classList.add('hidden');
+                }
+                errorDetected = true;
+            }
+            
+            // 检测iframe是否成功加载
+            function checkIframeLoad() {
+                checkCount++;
+                try {
+                    // 尝试访问iframe内容（可能因跨域失败，这是正常的）
+                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    if (iframeDoc && iframeDoc.readyState === 'complete') {
+                        hideLoading();
+                        hasLoaded = true;
+                        return true;
+                    }
+                } catch (e) {
+                    // 跨域访问被阻止是正常的，不代表加载失败
+                    // 如果iframe已经加载了一段时间，认为加载成功
+                    if (!errorDetected && checkCount > 3) {
+                        // 延迟隐藏加载提示，给iframe更多时间
+                        setTimeout(hideLoading, 1000);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            
+            // 隐藏加载提示
+            function hideLoading() {
+                if (loading && !hasLoaded) {
+                    loading.classList.add('hidden');
+                    hasLoaded = true;
+                    if (loadTimeout) {
+                        clearTimeout(loadTimeout);
+                    }
+                }
+            }
+            
+            // 显示错误信息
+            function showError(message, details) {
+                errorDetected = true;
+                if (loading) {
+                    let errorHTML = '<div class="error-message">' + message + '</div>';
+                    if (details) {
+                        errorHTML += '<div style="font-size: 12px; color: #999; margin-top: 10px;">' + details + '</div>';
+                    }
+                    const param = getQueryParam() || getCurrentHash();
+                    const errorUrl = buildIframeUrl(getCurrentUrl());
+                    errorHTML += '<a href="' + errorUrl + '" target="_blank" rel="noopener noreferrer" class="error-link">点击这里在新窗口中打开</a>';
+                    loading.innerHTML = errorHTML;
+                    loading.classList.remove('hidden');
+                }
+            }
+            
+            // 测试URL是否可访问
+            function testUrlAccessibility() {
+                return new Promise(function(resolve) {
+                    const testUrl = getCurrentUrl();
+                    if (!testUrl) {
+                        resolve(false);
+                        return;
+                    }
+                    
+                    const testImg = new Image();
+                    testImg.onload = function() {
+                        resolve(true);
+                    };
+                    testImg.onerror = function() {
+                        resolve(false);
+                    };
+                    // 尝试加载目标URL的favicon或根路径
+                    testImg.src = testUrl + '/favicon.ico?' + Date.now();
+                    setTimeout(function() {
+                        resolve(null); // 超时返回null
+                    }, 3000);
+                });
+            }
+            
+            // iframe加载事件处理
+            // 注意：不在页面加载时立即设置iframe的src，等待用户选择线路后再加载
+            if (iframe) {
+                // 监听hash变化，自动更新iframe URL（仅在已选择线路后）
+                window.addEventListener('hashchange', function() {
+                    // 只有在已经选择了线路的情况下才更新
+                    if (selectedRoute && iframe.src) {
+                        updateIframeUrl();
+                    }
+                });
+                
+                // 立即检查混合内容问题
+                const hasMixedContent = checkMixedContent();
+                if (hasMixedContent) {
+                    console.warn('检测到混合内容问题：HTTPS页面无法嵌入HTTP内容');
+                    // 立即显示警告，不等待iframe加载
+                    showMixedContentWarning();
+                    return; // 提前返回，不继续执行后续代码
+                }
+                
+                // 监听iframe加载完成
+                iframe.addEventListener('load', function() {
+                    console.log('iframe load 事件触发');
+                    const isWeChat = /micromessenger/i.test(navigator.userAgent);
+                    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                                 (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+                    
+                    // 更新高度，确保内容完整显示
+                    updateIframeHeight();
+                    
+                    // 延迟一点再隐藏，确保内容渲染完成
+                    setTimeout(function() {
+                        if (!errorDetected) {
+                            hideLoading();
+                            // 再次更新高度，确保底部导航栏可见
+                            updateIframeHeight();
+                        }
+                    }, 800);
+                    
+                    // 延迟更新高度，等待内容完全渲染
+                    setTimeout(updateIframeHeight, 1500);
+                    setTimeout(updateIframeHeight, 3000);
+                    
+                    // 微信和iOS需要更多次更新
+                    if (isWeChat || isIOS) {
+                        setTimeout(updateIframeHeight, 500);
+                        setTimeout(updateIframeHeight, 1000);
+                        setTimeout(updateIframeHeight, 2000);
+                        setTimeout(updateIframeHeight, 4000);
+                    }
+                });
+                
+                // 监听iframe加载错误
+                iframe.addEventListener('error', function(e) {
+                    console.error('iframe error 事件触发', e);
+                    // 再次检查是否是混合内容问题
+                    if (checkMixedContent()) {
+                        showMixedContentWarning();
+                        return;
+                    }
+                    
+                    let errorMsg = '加载失败，可能的原因：';
+                    let details = '';
+                    errorMsg += '<br>• 目标网站不允许嵌入（X-Frame-Options限制）';
+                    errorMsg += '<br>• 网络连接问题';
+                    errorMsg += '<br>• 服务器未响应';
+                    details += '提示：请检查目标URL是否可访问，或尝试在新窗口中打开。';
+                    
+                    showError(errorMsg, details);
+                });
+                
+                // 使用多种方式检测加载状态
+                let loadCheckInterval = setInterval(function() {
+                    // 如果检测到混合内容，停止检查
+                    if (checkMixedContent() && !errorDetected) {
+                        clearInterval(loadCheckInterval);
+                        showMixedContentWarning();
+                        return;
+                    }
+                    
+                    if (hasLoaded) {
+                        clearInterval(loadCheckInterval);
+                        return;
+                    }
+                    
+                    if (checkIframeLoad()) {
+                        clearInterval(loadCheckInterval);
+                    } else if (checkCount >= maxChecks) {
+                        clearInterval(loadCheckInterval);
+                        // 如果检查了足够多次还没成功，再次检查混合内容
+                        if (checkMixedContent()) {
+                            showMixedContentWarning();
+                            return;
+                        }
+                        // 尝试测试URL可访问性
+                        testUrlAccessibility().then(function(accessible) {
+                            if (accessible === false) {
+                                showError('无法连接到目标服务器。', '请检查网络连接或URL是否正确。');
+                            } else if (!hasLoaded) {
+                                // 即使无法确定，也隐藏加载提示，让用户看到iframe
+                                hideLoading();
+                            }
+                        });
+                    }
+                }, 500);
+                
+                // 备用检测：如果8秒后还没加载完成，隐藏加载提示
+                loadTimeout = setTimeout(function() {
+                    if (!hasLoaded && !errorDetected) {
+                        console.log('超时隐藏加载提示');
+                        hideLoading();
+                    }
+                }, 8000);
+                
+                // 15秒后停止所有检查
+                setTimeout(function() {
+                    clearInterval(loadCheckInterval);
+                    if (loadTimeout) {
+                        clearTimeout(loadTimeout);
+                    }
+                }, 15000);
+            }
+            
+            // 处理页面可见性变化
+            document.addEventListener('visibilitychange', function() {
+                if (!document.hidden && iframe && !hasLoaded && !errorDetected) {
+                    checkIframeLoad();
+                }
+            });
+            
+            // 计算实际可用高度（考虑移动端浏览器工具栏）
+            function getAvailableHeight() {
+                // 检测是否为微信浏览器
+                const isWeChat = /micromessenger/i.test(navigator.userAgent);
+                // 检测是否为iOS设备
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+                
+                // 微信浏览器和iOS的特殊处理
+                if (isWeChat || isIOS) {
+                    // 优先使用visualViewport（如果支持）
+                    if (window.visualViewport && window.visualViewport.height) {
+                        return window.visualViewport.height;
+                    }
+                    // iOS Safari的特殊处理：使用screen.height作为参考
+                    if (isIOS && window.screen && window.screen.height) {
+                        // 尝试多种方式获取准确高度
+                        const innerHeight = window.innerHeight || 0;
+                        const screenHeight = window.screen.height;
+                        const clientHeight = document.documentElement.clientHeight || 0;
+                        
+                        // 选择最大的有效高度值
+                        let height = Math.max(innerHeight, clientHeight);
+                        
+                        // 如果高度异常小（可能是工具栏影响），使用screen.height
+                        if (height < screenHeight * 0.5) {
+                            height = screenHeight;
+                        }
+                        
+                        // 确保高度合理（不超过屏幕高度）
+                        if (height > screenHeight) {
+                            height = screenHeight;
+                        }
+                        
+                        return height;
+                    }
+                }
+                
+                // 优先使用动态视口高度（考虑移动端浏览器工具栏）
+                if (window.visualViewport && window.visualViewport.height) {
+                    return window.visualViewport.height;
+                }
+                
+                // 使用标准视口高度
+                const height = window.innerHeight || document.documentElement.clientHeight;
+                return height || window.screen.height || 800; // 默认值
+            }
+            
+            // 更新iframe高度
+            function updateIframeHeight() {
+                if (iframe && iframeWrapper) {
+                    let availableHeight = getAvailableHeight();
+                    const isWeChat = /micromessenger/i.test(navigator.userAgent);
+                    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                                 (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+                    
+                    // 如果键盘弹起，使用visualViewport的高度
+                    if (window.keyboardVisible && window.visualViewport && window.visualViewport.height) {
+                        availableHeight = window.visualViewport.height;
+                    }
+                    
+                    // 确保iframe使用完整的可用高度
+                    iframeWrapper.style.height = availableHeight + 'px';
+                    iframeWrapper.style.minHeight = availableHeight + 'px';
+                    iframeWrapper.style.maxHeight = availableHeight + 'px';
+                    
+                    // iframe高度设置
+                    iframe.style.height = availableHeight + 'px';
+                    iframe.style.minHeight = availableHeight + 'px';
+                    iframe.style.maxHeight = 'none'; // 允许内容超出时滚动
+                    iframe.style.width = '100%';
+                    
+                    // 确保iframe定位准确，使用absolute定位（所有设备）
+                    iframe.style.position = 'absolute';
+                    iframe.style.top = '0';
+                    iframe.style.left = '0';
+                    iframe.style.right = '0';
+                    iframe.style.bottom = '0';
+                    iframe.style.display = 'block';
+                    
+                    // 确保滚动相关样式不被覆盖，防止横向滚动
+                    iframe.style.overflow = 'auto';
+                    iframe.style.overflowX = 'hidden';
+                    iframe.style.overflowY = 'auto';
+                    iframe.style.webkitOverflowScrolling = 'touch';
+                    iframe.style.maxWidth = '100%';
+                    // 防止内容溢出
+                    iframe.style.boxSizing = 'border-box';
+                    
+                    // 键盘弹起时，确保iframe可以滚动，让输入框可见
+                    if (window.keyboardVisible) {
+                        iframe.style.overflowY = 'auto';
+                        iframe.style.webkitOverflowScrolling = 'touch';
+                    }
+                    
+                    // 确保点击位置准确 - 移除所有可能影响定位的样式
+                    iframe.style.pointerEvents = 'auto';
+                    iframe.style.touchAction = 'manipulation'; // Chrome模拟器优化
+                    iframe.style.transform = 'none';
+                    iframe.style.willChange = 'auto';
+                    iframe.style.zoom = '1';
+                    iframe.style.webkitTransform = 'none';
+                    iframe.style.mozTransform = 'none';
+                    iframe.style.msTransform = 'none';
+                    iframe.style.oTransform = 'none';
+                    iframe.style.margin = '0';
+                    iframe.style.padding = '0';
+                    // Chrome模拟器优化 - 确保坐标准确
+                    iframe.style.webkitTapHighlightColor = 'transparent';
+                    iframe.style.webkitTouchCallout = 'none';
+                    
+                    // 确保iframe容器定位准确
+                    iframeWrapper.style.overflow = 'hidden';
+                    iframeWrapper.style.transform = 'none';
+                    iframeWrapper.style.willChange = 'auto';
+                    
+                    const iframeContainer = document.querySelector('.iframe-container');
+                    if (iframeContainer) {
+                        iframeContainer.style.overflow = 'hidden';
+                        iframeContainer.style.overflowX = 'hidden';
+                        iframeContainer.style.height = availableHeight + 'px';
+                        iframeContainer.style.minHeight = availableHeight + 'px';
+                        iframeContainer.style.maxHeight = availableHeight + 'px';
+                        iframeContainer.style.position = 'relative';
+                        iframeContainer.style.width = '100%';
+                        iframeContainer.style.maxWidth = '100%';
+                        iframeContainer.style.transform = 'none';
+                        iframeContainer.style.willChange = 'auto';
+                        iframeContainer.style.margin = '0';
+                        iframeContainer.style.padding = '0';
+                    }
+                    
+                    // 微信和iOS特殊处理：确保可以滚动
+                    if (isWeChat || isIOS) {
+                        // 额外的iOS/微信优化
+                        iframe.style.webkitOverflowScrolling = 'touch';
+                    }
+                    
+                    // 确保容器也使用正确的高度
+                    const container = document.querySelector('.container');
+                    if (container) {
+                        container.style.height = availableHeight + 'px';
+                        container.style.maxHeight = availableHeight + 'px';
+                        container.style.minHeight = availableHeight + 'px';
+                    }
+                    
+                    // 强制重绘和重新计算布局（确保点击位置准确）
+                    // Chrome模拟器和所有设备都需要确保布局准确
+                    void iframe.offsetHeight;
+                    if (iframeContainer) {
+                        void iframeContainer.offsetHeight;
+                    }
+                    void iframeWrapper.offsetHeight;
+                    
+                    // 确保iframe的尺寸和位置完全匹配容器（所有设备，特别是Chrome模拟器）
+                    if (iframeContainer) {
+                        const containerRect = iframeContainer.getBoundingClientRect();
+                        if (containerRect) {
+                            iframe.style.width = containerRect.width + 'px';
+                            iframe.style.height = containerRect.height + 'px';
+                            iframe.style.left = '0px';
+                            iframe.style.top = '0px';
+                        }
+                    }
+                }
+            }
+            
+            // 处理窗口大小变化，确保iframe正确显示
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    updateIframeHeight();
+                }, 100);
+            });
+            
+            // 监听视觉视口变化（移动端浏览器工具栏显示/隐藏时，以及键盘弹起/收起）
+            let lastVisualViewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+            let keyboardVisible = false;
+            
+            // 将keyboardVisible暴露到全局作用域，以便updateIframeHeight可以访问
+            window.keyboardVisible = false;
+            
+            if (window.visualViewport) {
+                window.visualViewport.addEventListener('resize', function() {
+                    const currentHeight = window.visualViewport.height;
+                    const heightDiff = lastVisualViewportHeight - currentHeight;
+                    
+                    // 检测键盘是否弹起（高度明显减小，通常减少超过150px）
+                    if (heightDiff > 150) {
+                        keyboardVisible = true;
+                        window.keyboardVisible = true;
+                        // 键盘弹起时，使用当前可视高度，并防止页面滚动
+                        handleKeyboardShow();
+                    } else if (heightDiff < -50) {
+                        // 键盘收起时
+                        keyboardVisible = false;
+                        window.keyboardVisible = false;
+                        handleKeyboardHide();
+                    }
+                    
+                    lastVisualViewportHeight = currentHeight;
+                    updateIframeHeight();
+                    // 防止输入框聚焦时自动缩放
+                    preventAutoZoom();
+                });
+                
+                window.visualViewport.addEventListener('scroll', function() {
+                    // 键盘弹起时，允许visualViewport滚动，这样输入框可以保持在可视区域
+                    // 但防止外层页面滚动
+                    if (keyboardVisible) {
+                        // 只防止外层页面滚动，允许visualViewport滚动
+                        window.scrollTo(0, 0);
+                    }
+                    updateIframeHeight();
+                });
+            }
+            
+            // 处理键盘弹起
+            function handleKeyboardShow() {
+                // 防止外层页面滚动，但允许iframe内容滚动
+                document.body.style.position = 'fixed';
+                document.body.style.top = '0';
+                document.body.style.left = '0';
+                document.body.style.right = '0';
+                document.body.style.bottom = '0';
+                document.body.style.overflow = 'hidden';
+                
+                // 立即更新iframe高度，使其适应键盘弹起后的可视区域
+                updateIframeHeight();
+                
+                // 延迟一下，让iframe内容有机会自动滚动到输入框位置
+                setTimeout(function() {
+                    // 尝试让iframe内容滚动到底部（输入框通常在底部）
+                    try {
+                        if (iframe && iframe.contentWindow) {
+                            // 滚动到iframe底部，确保输入框可见
+                            iframe.contentWindow.scrollTo({
+                                top: iframe.contentDocument?.body?.scrollHeight || 999999,
+                                behavior: 'smooth'
+                            });
+                        }
+                    } catch (e) {
+                        // 跨域限制，无法访问iframe内容
+                        console.log('无法访问iframe内容（跨域限制）');
+                    }
+                    
+                    // 更新iframe高度，确保布局正确
+                    updateIframeHeight();
+                }, 300);
+            }
+            
+            // 处理键盘收起
+            function handleKeyboardHide() {
+                // 恢复页面样式
+                document.body.style.position = '';
+                document.body.style.top = '';
+                document.body.style.left = '';
+                document.body.style.right = '';
+                document.body.style.bottom = '';
+                document.body.style.overflow = '';
+                
+                // 更新iframe高度
+                setTimeout(updateIframeHeight, 100);
+                setTimeout(updateIframeHeight, 300);
+            }
+            
+            // 防止输入框聚焦时页面自动缩放（iOS Safari问题）
+            let lastViewportWidth = window.innerWidth;
+            let lastViewportHeight = window.innerHeight;
+            
+            function preventAutoZoom() {
+                // 检测视口是否因为输入框聚焦而改变
+                const currentWidth = window.innerWidth;
+                const currentHeight = window.innerHeight;
+                
+                // 如果视口大小突然改变（通常是自动缩放导致的），强制恢复
+                if (Math.abs(currentWidth - lastViewportWidth) > 10 || 
+                    Math.abs(currentHeight - lastViewportHeight) > 10) {
+                    // 强制恢复视口设置
+                    const viewport = document.querySelector('meta[name="viewport"]');
+                    if (viewport) {
+                        viewport.setAttribute('content', 
+                            'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, shrink-to-fit=no');
+                    }
+                    // 更新iframe高度
+                    updateIframeHeight();
+                }
+                
+                lastViewportWidth = currentWidth;
+                lastViewportHeight = currentHeight;
+            }
+            
+            // 定期检查视口大小（防止自动缩放）
+            setInterval(preventAutoZoom, 500);
+            
+            // 微信浏览器特殊处理：监听orientationchange（屏幕旋转）
+            if (isWeChat) {
+                window.addEventListener('orientationchange', function() {
+                    setTimeout(updateIframeHeight, 300);
+                    setTimeout(updateIframeHeight, 600);
+                });
+                
+                // 微信浏览器可能需要更频繁的高度更新
+                let wechatHeightCheck = setInterval(function() {
+                    updateIframeHeight();
+                }, 2000);
+                
+                // 10秒后停止频繁检查
+                setTimeout(function() {
+                    if (wechatHeightCheck) {
+                        clearInterval(wechatHeightCheck);
+                    }
+                }, 10000);
+            }
+            
+            // 页面加载完成后更新高度
+            window.addEventListener('load', function() {
+                updateIframeHeight();
+                // 延迟再次更新，确保浏览器工具栏已完全显示/隐藏
+                setTimeout(updateIframeHeight, 300);
+                setTimeout(updateIframeHeight, 600);
+                setTimeout(updateIframeHeight, 1000);
+                // 微信浏览器需要更多次更新
+                if (isWeChat) {
+                    setTimeout(updateIframeHeight, 1500);
+                    setTimeout(updateIframeHeight, 2000);
+                }
+            });
+            
+            // 初始高度设置
+            updateIframeHeight();
+            
+            // DOMContentLoaded时也更新一次
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    updateIframeHeight();
+                });
+            } else {
+                updateIframeHeight();
+            }
+            
+            // 检测是否支持iframe
+            if (!iframe) {
+                showError('浏览器不支持这个功能。');
+            }
+            
+            // 初始化所有链接（在页面加载时）
+            function initializeLinks() {
+                updateAllLinks();
+            }
+            
+            // 页面加载完成后初始化链接
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initializeLinks);
+            } else {
+                initializeLinks();
+            }
+            
+            // 安全检测动画
+            function startSecurityCheck() {
+                const securityCheckContent = document.getElementById('securityCheckContent');
+                const checkSubtitle = document.getElementById('checkSubtitle');
+                const progressFill = document.getElementById('progressFill');
+                
+                // 确保必要的DOM元素存在
+                if (!securityCheckContent) {
+                    console.warn('安全检测内容元素未找到，延迟重试');
+                    setTimeout(startSecurityCheck, 200);
+                    return;
+                }
+                
+                // 检测是否为iOS设备
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+                
+                // iOS设备使用更短的延迟时间
+                const baseDelay = isIOS ? 200 : 300;
+                const steps = [
+                    { id: 'step1', text: '检测浏览器环境', delay: baseDelay },
+                    { id: 'step2', text: '验证安全连接', delay: baseDelay * 2 },
+                    { id: 'step3', text: '检查访问权限', delay: baseDelay * 3 },
+                    { id: 'step4', text: '完成安全验证', delay: baseDelay * 4 }
+                ];
+                
+                let currentStep = 0;
+                let isCompleted = false;
+                let stepTimeouts = [];
+                let startTime = Date.now();
+                
+                // 强制完成函数（超时保护）
+                function forceComplete() {
+                    if (isCompleted) return;
+                    isCompleted = true;
+                    
+                    // 清理所有未执行的setTimeout
+                    stepTimeouts.forEach(function(timeoutId) {
+                        if (timeoutId) clearTimeout(timeoutId);
+                    });
+                    stepTimeouts = [];
+                    
+                    // 标记所有步骤为完成
+                    steps.forEach(function(s) {
+                        try {
+                            const el = document.getElementById(s.id);
+                            if (el) {
+                                el.classList.remove('active');
+                                el.classList.add('completed');
+                            }
+                        } catch (e) {
+                            // 忽略错误
+                        }
+                    });
+                    
+                    // 更新图标和标题
+                    try {
+                        const securityIcon = document.querySelector('.security-icon');
+                        if (securityIcon) {
+                            securityIcon.textContent = '✓';
+                        }
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    
+                    // 更新主标题
+                    try {
+                        const mainTitle = securityCheckContent.querySelector('h2');
+                        if (mainTitle) {
+                            mainTitle.textContent = '安全验证';
+                            mainTitle.style.opacity = '1';
+                            mainTitle.style.transform = 'translateY(0)';
+                        }
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    
+                    try {
+                        if (checkSubtitle) {
+                            checkSubtitle.style.display = 'none';
+                        }
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    
+                    // 显示完成消息
+                    try {
+                        if (securityCheckContent) {
+                            securityCheckContent.classList.add('check-complete');
+                        }
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    
+                    // 确保进度条100%
+                    try {
+                        if (progressFill) {
+                            progressFill.style.width = '100%';
+                        }
+                    } catch (e) {
+                        // 忽略错误
+                    }
+                    
+                    // 检测完成后自动进入线路选择界面（延迟一点显示完成效果）
+                    setTimeout(function() {
+                        hideSecurityCheck();
+                    }, 800);
+                }
+                
+                // 设置总超时保护
+                const totalTimeoutDuration = isIOS ? 2500 : 3000;
+                const totalTimeout = setTimeout(function() {
+                    forceComplete();
+                }, totalTimeoutDuration);
+                stepTimeouts.push(totalTimeout);
+                
+                // 添加额外的安全检查：如果2秒后还没完成，强制完成
+                const quickTimeout = setTimeout(function() {
+                    if (!isCompleted && currentStep < steps.length - 1) {
+                        currentStep = steps.length;
+                        forceComplete();
+                    }
+                }, 2000);
+                stepTimeouts.push(quickTimeout);
+                
+                function showNextStep() {
+                    if (isCompleted) return;
+                    
+                    const elapsed = Date.now() - startTime;
+                    if (elapsed > 3000) {
+                        forceComplete();
+                        return;
+                    }
+                    
+                    if (currentStep < steps.length) {
+                        const step = steps[currentStep];
+                        
+                        try {
+                            const stepElement = document.getElementById(step.id);
+                            if (stepElement) {
+                                stepElement.classList.add('active');
+                            }
+                        } catch (e) {
+                            // 忽略错误
+                        }
+                        
+                        try {
+                            const progress = ((currentStep + 1) / steps.length) * 100;
+                            if (progressFill) {
+                                progressFill.style.width = progress + '%';
+                            }
+                        } catch (e) {
+                            // 忽略错误
+                        }
+                        
+                        try {
+                            if (checkSubtitle) {
+                                checkSubtitle.textContent = step.text + '...';
+                            }
+                        } catch (e) {
+                            // 忽略错误
+                        }
+                        
+                        currentStep++;
+                        
+                        if (currentStep < steps.length) {
+                            const nextDelay = isIOS ? Math.min(step.delay, 400) : step.delay;
+                            try {
+                                const timeoutId = setTimeout(function() {
+                                    showNextStep();
+                                }, nextDelay);
+                                stepTimeouts.push(timeoutId);
+                            } catch (e) {
+                                setTimeout(function() {
+                                    showNextStep();
+                                }, 100);
+                            }
+                        } else {
+                            forceComplete();
+                        }
+                    } else {
+                        forceComplete();
+                    }
+                }
+                
+                function startCheck() {
+                    try {
+                        const firstStep = document.getElementById('step1');
+                        if (firstStep && securityCheckContent) {
+                            showNextStep();
+                        } else {
+                            forceComplete();
+                        }
+                    } catch (e) {
+                        forceComplete();
+                    }
+                }
+                
+                const startDelay = isIOS ? 100 : 200;
+                try {
+                    const startTimeoutId = setTimeout(startCheck, startDelay);
+                    stepTimeouts.push(startTimeoutId);
+                } catch (e) {
+                    if (window.requestAnimationFrame) {
+                        let frameCount = 0;
+                        const maxFrames = Math.ceil(startDelay / 16);
+                        function rafStart() {
+                            frameCount++;
+                            if (frameCount >= maxFrames) {
+                                startCheck();
+                            } else {
+                                requestAnimationFrame(rafStart);
+                            }
+                        }
+                        requestAnimationFrame(rafStart);
+                    } else {
+                        startCheck();
+                    }
+                }
+                
+                const backupStart = setTimeout(function() {
+                    if (currentStep === 0 && !isCompleted) {
+                        forceComplete();
+                    }
+                }, 1000);
+                stepTimeouts.push(backupStart);
+            }
+            
+            // 安全检测页面处理
+            function hideSecurityCheck() {
+                if (securityCheck) {
+                    securityCheck.classList.add('hidden');
+                    setTimeout(function() {
+                        if (securityCheck) {
+                            securityCheck.style.display = 'none';
+                        }
+                        
+                        // 检查是否有保存的线路，如果有则直接加载，否则显示选择界面
+                        if (hasSavedRoute && selectedRoute) {
+                            // 直接加载保存的线路，跳过选择界面
+                            loadSavedRoute();
+                        } else {
+                            // 显示线路选择界面
+                            showRouteSelector();
+                        }
+                    }, 500);
+                }
+            }
+            
+            // 线路选择界面：点击线路直接进入（已移除按钮）
+            
+            // 重选线路按钮事件（支持拖动和展开/折叠）
+            if (routeChangeBtn) {
+                let isDragging = false;
+                let dragStartX = 0;
+                let dragStartY = 0;
+                let initialX = 0;
+                let initialY = 0;
+                let currentX = 0;
+                let currentY = 0;
+                let isExpanded = false;
+                let rafId = null;
+                let btnWidth = 0;
+                let btnHeight = 0;
+                
+                // 从localStorage恢复按钮位置和状态
+                const savedPosition = localStorage.getItem('routeChangeBtnPosition');
+                if (savedPosition) {
+                    try {
+                        const pos = JSON.parse(savedPosition);
+                        if (pos.top) routeChangeBtn.style.top = pos.top;
+                        if (pos.right) routeChangeBtn.style.right = pos.right;
+                        if (pos.left) routeChangeBtn.style.left = pos.left;
+                        if (pos.bottom) routeChangeBtn.style.bottom = pos.bottom;
+                    } catch (e) {
+                        console.error('Failed to restore button position:', e);
+                    }
+                }
+                
+                // 展开按钮
+                function expandButton() {
+                    routeChangeBtn.classList.remove('collapsed');
+                    routeChangeBtn.classList.add('expanded');
+                    isExpanded = true;
+                }
+                
+                // 折叠按钮
+                function collapseButton() {
+                    routeChangeBtn.classList.remove('expanded');
+                    routeChangeBtn.classList.add('collapsed');
+                    isExpanded = false;
+                }
+                
+                // 切换展开/折叠状态
+                function toggleExpand() {
+                    if (isExpanded) {
+                        collapseButton();
+                    } else {
+                        expandButton();
+                    }
+                }
+                
+                // 鼠标/触摸开始拖动
+                function startDrag(e) {
+                    isDragging = false;
+                    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                    
+                    dragStartX = clientX;
+                    dragStartY = clientY;
+                    
+                    const rect = routeChangeBtn.getBoundingClientRect();
+                    initialX = rect.left;
+                    initialY = rect.top;
+                    
+                    // 缓存按钮尺寸，避免拖动时重复计算
+                    btnWidth = routeChangeBtn.offsetWidth;
+                    btnHeight = routeChangeBtn.offsetHeight;
+                    
+                    // 如果按钮是折叠状态，先展开
+                    if (!isExpanded) {
+                        expandButton();
+                        // 展开后不执行拖动，等待下次操作
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // 拖动时禁用transition
+                    routeChangeBtn.style.transition = 'none';
+                    routeChangeBtn.classList.add('dragging');
+                    e.preventDefault();
+                }
+                
+                // 使用requestAnimationFrame优化拖动性能
+                function updatePosition() {
+                    if (!routeChangeBtn.classList.contains('dragging')) {
+                        rafId = null;
+                        return;
+                    }
+                    
+                    // 限制在视口内
+                    const maxX = window.innerWidth - btnWidth;
+                    const maxY = window.innerHeight - btnHeight;
+                    
+                    currentX = Math.max(0, Math.min(currentX, maxX));
+                    currentY = Math.max(0, Math.min(currentY, maxY));
+                    
+                    // 直接使用left/top定位，更准确
+                    routeChangeBtn.style.left = currentX + 'px';
+                    routeChangeBtn.style.top = currentY + 'px';
+                    routeChangeBtn.style.right = 'auto';
+                    routeChangeBtn.style.bottom = 'auto';
+                    
+                    rafId = null;
+                }
+                
+                // 拖动中
+                function drag(e) {
+                    if (!routeChangeBtn.classList.contains('dragging')) return;
+                    
+                    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                    
+                    const deltaX = clientX - dragStartX;
+                    const deltaY = clientY - dragStartY;
+                    
+                    // 如果移动距离超过5px，认为是拖动而不是点击
+                    if (Math.abs(deltaX) > 5 || Math.abs(deltaY) > 5) {
+                        isDragging = true;
+                    }
+                    
+                    if (isDragging) {
+                        currentX = initialX + deltaX;
+                        currentY = initialY + deltaY;
+                        
+                        // 使用requestAnimationFrame优化性能
+                        if (!rafId) {
+                            rafId = requestAnimationFrame(updatePosition);
+                        }
+                    }
+                    
+                    e.preventDefault();
+                }
+                
+                // 结束拖动
+                function endDrag(e) {
+                    if (routeChangeBtn.classList.contains('dragging')) {
+                        // 取消未完成的动画帧
+                        if (rafId) {
+                            cancelAnimationFrame(rafId);
+                            rafId = null;
+                        }
+                        
+                        // 应用最终位置（移除transform，使用left/top）
+                        if (isDragging) {
+                            const maxX = window.innerWidth - btnWidth;
+                            const maxY = window.innerHeight - btnHeight;
+                            currentX = Math.max(0, Math.min(currentX, maxX));
+                            currentY = Math.max(0, Math.min(currentY, maxY));
+                            
+                            routeChangeBtn.style.transform = 'none';
+                            routeChangeBtn.style.left = currentX + 'px';
+                            routeChangeBtn.style.top = currentY + 'px';
+                            routeChangeBtn.style.right = 'auto';
+                            routeChangeBtn.style.bottom = 'auto';
+                        }
+                        
+                        // 恢复transition
+                        routeChangeBtn.style.transition = '';
+                        routeChangeBtn.classList.remove('dragging');
+                        
+                        // 保存位置到localStorage
+                        const position = {
+                            top: routeChangeBtn.style.top,
+                            left: routeChangeBtn.style.left,
+                            right: routeChangeBtn.style.right,
+                            bottom: routeChangeBtn.style.bottom
+                        };
+                        localStorage.setItem('routeChangeBtnPosition', JSON.stringify(position));
+                        
+                        // 如果不是拖动，而是点击，则执行点击事件
+                        if (!isDragging && isExpanded) {
+                            // 隐藏iframe，显示线路选择界面
+                            if (iframeWrapper) {
+                                iframeWrapper.style.display = 'none';
+                            }
+                            // 显示线路选择界面
+                            showRouteSelector();
+                            // 切换线路后自动折叠
+                            setTimeout(collapseButton, 300);
+                        }
+                        
+                        isDragging = false;
+                    }
+                }
+                
+                // 点击按钮展开/折叠或执行切换线路
+                routeChangeBtn.addEventListener('click', function(e) {
+                    // 阻止事件冒泡，避免触发document的点击事件导致立即折叠
+                    e.stopPropagation();
+                    
+                    // 如果正在拖动，不执行点击事件
+                    if (isDragging) {
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // 如果按钮是折叠状态，展开
+                    if (!isExpanded) {
+                        expandButton();
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // 如果按钮已展开，执行切换线路功能
+                    if (isExpanded) {
+                        // 隐藏iframe，显示线路选择界面
+                        if (iframeWrapper) {
+                            iframeWrapper.style.display = 'none';
+                        }
+                        // 显示线路选择界面
+                        showRouteSelector();
+                        // 切换线路后自动折叠
+                        setTimeout(collapseButton, 300);
+                    }
+                });
+                
+                // 鼠标事件（用于拖动）
+                routeChangeBtn.addEventListener('mousedown', startDrag);
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('mouseup', endDrag);
+                
+                // 触摸事件（用于拖动）
+                routeChangeBtn.addEventListener('touchstart', startDrag, { passive: false });
+                document.addEventListener('touchmove', drag, { passive: false });
+                document.addEventListener('touchend', endDrag);
+                
+                // 点击页面其他地方时折叠按钮
+                function handleDocumentClick(e) {
+                    // 如果按钮是展开状态，且点击的不是按钮本身
+                    if (isExpanded && !routeChangeBtn.contains(e.target)) {
+                        // 立即折叠，不需要延迟
+                        collapseButton();
+                    }
+                }
+                
+                // 使用捕获阶段，确保能捕获到所有点击事件
+                document.addEventListener('click', handleDocumentClick, true);
+                
+                // 也监听触摸事件（移动端）
+                document.addEventListener('touchend', function(e) {
+                    if (isExpanded && !routeChangeBtn.contains(e.target)) {
+                        collapseButton();
+                    }
+                }, true);
+                
+                // 监听iframe容器的点击（处理iframe内的点击）
+                const iframeContainer = document.querySelector('.iframe-container');
+                if (iframeContainer) {
+                    iframeContainer.addEventListener('click', function(e) {
+                        // 如果点击的是iframe容器区域，且按钮是展开状态
+                        if (isExpanded && !routeChangeBtn.contains(e.target)) {
+                            collapseButton();
+                        }
+                    }, true);
+                }
+                
+                // 监听iframe wrapper的点击
+                if (iframeWrapper) {
+                    iframeWrapper.addEventListener('click', function(e) {
+                        if (isExpanded && !routeChangeBtn.contains(e.target)) {
+                            collapseButton();
+                        }
+                    }, true);
+                }
+                
+                // 监听body的点击（作为备用，使用冒泡阶段）
+                document.body.addEventListener('click', function(e) {
+                    if (isExpanded && !routeChangeBtn.contains(e.target)) {
+                        // 延迟一点，避免与按钮点击冲突
+                        setTimeout(function() {
+                            if (isExpanded && !routeChangeBtn.contains(e.target)) {
+                                collapseButton();
+                            }
+                        }, 50);
+                    }
+                }, false);
+            }
+            
+            if (routeRefreshBtn) {
+                routeRefreshBtn.addEventListener('click', function() {
+                    routeRefreshBtn.classList.add('refreshing');
+                    routeLatencies = {};
+                    renderRouteList();
+                    
+                    testAllRoutes().then(function(fastestRoute) {
+                        routeRefreshBtn.classList.remove('refreshing');
+                        // 自动选择最快的线路（但不自动进入，等待用户点击）
+                        if (fastestRoute && !selectedRoute) {
+                            selectedRoute = fastestRoute;
+                            const routeItem = document.querySelector('[data-route-id="' + fastestRoute.id + '"]');
+                            if (routeItem) {
+                                routeItem.classList.add('selected');
+                            }
+                        }
+                        renderRouteList();
+                    });
+                });
+            }
+            
+            // 初始状态：隐藏iframe，显示安全检测页面
+            if (iframeWrapper) {
+                iframeWrapper.style.display = 'none';
+            }
+            
+            // 确保安全检测页面在初始时显示并启动检测
+            function initSecurityCheck() {
+                if (securityCheck) {
+                    securityCheck.style.display = 'flex';
+                    const securityCheckContent = document.getElementById('securityCheckContent');
+                    if (securityCheckContent) {
+                        startSecurityCheck();
+                    } else {
+                        setTimeout(initSecurityCheck, 100);
+                    }
+                } else {
+                    setTimeout(initSecurityCheck, 100);
+                }
+            }
+            
+            // 根据文档状态选择启动时机
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    setTimeout(initSecurityCheck, 100);
+                });
+            } else {
+                setTimeout(initSecurityCheck, 100);
+            }
+            
+            // 备用启动（确保一定会执行）
+            window.addEventListener('load', function() {
+                if (securityCheck && securityCheck.style.display !== 'flex') {
+                    initSecurityCheck();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
